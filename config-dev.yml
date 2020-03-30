@@ -42,11 +42,11 @@ spring:
         min-idle: 0 # 最小空闲连接  默认 0
 
 #暴露端点
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
 #  endpoint:
 #    health:
 #      show-details: ALWAYS
@@ -70,6 +70,12 @@ mybatis-plus:
     multipleResultSetsEnabled: true #开启的话，延时加载一个属性时会加载该对象全部属性，否则按需加载属性
   #type-enums-package: com.youedata.foxconn.inquiry.common.enums
 
+#bus-rabbitmq服务器地址
+rabbitmq:
+   host: http://39.98.254.247
+   port: 15672
+   username: admin
+   password: admin
 
 #Eureka Client
 eureka:
