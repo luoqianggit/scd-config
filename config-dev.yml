@@ -48,11 +48,11 @@ spring:
    password: admin
    
 #暴露端点
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: '*'
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 #  endpoint:
 #    health:
 #      show-details: ALWAYS
