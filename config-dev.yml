@@ -40,7 +40,13 @@ spring:
         max-wait: 60000ms # 连接池最大阻塞等待时间 默认-1ms （-1 :表示没有限制） 这里设置1分钟
         max-idle: 8 # 最大空闲连接  默认 8
         min-idle: 0 # 最小空闲连接  默认 0
-
+ #bus-rabbitmq服务器地址
+ rabbitmq:
+   host: 39.98.254.247
+   port: 5672
+   username: admin
+   password: admin
+   
 #暴露端点
 #management:
 #  endpoints:
@@ -69,13 +75,6 @@ mybatis-plus:
     lazyLoadingEnabled: true #延时加载的开关
     multipleResultSetsEnabled: true #开启的话，延时加载一个属性时会加载该对象全部属性，否则按需加载属性
   #type-enums-package: com.youedata.foxconn.inquiry.common.enums
-
-#bus-rabbitmq服务器地址
-rabbitmq:
-   host: http://39.98.254.247
-   port: 15672
-   username: admin
-   password: admin
 
 #Eureka Client
 eureka:
