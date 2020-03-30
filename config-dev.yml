@@ -40,18 +40,20 @@ spring:
         max-wait: 60000ms # 连接池最大阻塞等待时间 默认-1ms （-1 :表示没有限制） 这里设置1分钟
         max-idle: 8 # 最大空闲连接  默认 8
         min-idle: 0 # 最小空闲连接  默认 0
+
+#暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+#  endpoint:
+#    health:
+#      show-details: ALWAYS
 #  boot:
 #    admin:
 #      client:
 #        url: http://127.0.0.1:9090
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: '*'
-#  endpoint:
-#    health:
-#      show-details: ALWAYS
 
 #mybatis-plus
 mybatis-plus:
